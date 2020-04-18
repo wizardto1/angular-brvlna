@@ -11,12 +11,14 @@ import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 import { LearningCenterComponent } from './learning-center/learning-center.component';
 import { VideoComponent } from './video/video.component';
 import { HomeEvalComponent } from './home-eval/home-eval.component';
+import { TransitionComponent } from './transition/transition.component';
+import { ContactComponent } from './contact/contact.component';
 const appRoutes: Routes = [
-   { path: '', redirectTo : '/home', pathMatch:'full' },{path:'home', component: HomeComponent },{path:'learning',component:LearningCenterComponent},{path:'video',component:VideoComponent},{path:'eval',component:HomeEvalComponent}];
+   { path: '', redirectTo : '/home', pathMatch:'full' },{path:'home', component: HomeComponent },{path:'learning',component:LearningCenterComponent},{path:'video',component:VideoComponent},{path:'eval',component:HomeEvalComponent},{path:'transition',component:TransitionComponent},{path:'contact',component:ContactComponent}];
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, TopBarComponent, BottomBarComponent, LearningCenterComponent, VideoComponent, HomeEvalComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, TopBarComponent, BottomBarComponent, LearningCenterComponent, VideoComponent, HomeEvalComponent, TransitionComponent, ContactComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
